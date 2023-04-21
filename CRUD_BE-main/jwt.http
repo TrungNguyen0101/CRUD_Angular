@@ -1,0 +1,14 @@
+GET https://crudbe.herokuapp.com/api/user/findAllUser
+ 
+authorization : Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzM1MzQwNzcsImV4cCI6MTY3MzUzNDEwN30.iQH2c8Fh4gwBODZ0mO3xSr14BkABnlS5zLyjM4bl9ro
+###
+GET https://crudbe.herokuapp.com/api/book
+ 
+authorization:  Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzM1MzQ1MzQsImV4cCI6MTY3MzUzNDU2NH0.WeendSA7XVKbPzqKXe4h3pAJrSsTucEFUKSvLMJSzp8
+### 
+POST https://crudbe.herokuapp.com/api/login
+
+{
+    "username" :"nguyen",
+    "password" :"123123"
+}

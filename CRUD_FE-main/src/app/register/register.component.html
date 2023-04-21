@@ -1,0 +1,43 @@
+<section class="vh-100">
+    <div class="container py-2 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem">
+                    <form class="card-body p-3 text-center" autocomplete="off" [formGroup]="formData">
+                        <h3 class="mb-5">Sign up</h3>
+                        <div class="form-outline mb-4">
+                            <input type="text" formControlName="username" class="form-control form-control-lg"
+                                placeholder="Enter your username" />
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="password" formControlName="password" class="form-control form-control-lg"
+                                placeholder="Enter your password" />
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="password" formControlName="confirmPassword"
+                                class="form-control form-control-lg" placeholder="confirm password" />
+                        </div>
+                        <div class="flex gap-x-[50px]">
+                            <div class="flex gap-x-[10px]">
+                                <input type="radio" formControlName="role" id="admin" name="role" value="admin" />
+                                <label for="admin" class="text-[20px]">Admin</label>
+                            </div>
+                            <div class="flex gap-x-[10px]">
+                                <input type="radio" formControlName="role" id="user" name="role" value="user" />
+                                <label for="user" class="text-[20px]">User</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                class="no-underline">
+                                Do you already have an account? Login</a>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="handlerCreateAPI()">
+                            Register
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
